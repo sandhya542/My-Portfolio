@@ -1,0 +1,78 @@
+.aboutSection {
+  padding: 56px 0;
+  border-bottom: 1px solid #222;
+}
+
+.headerBlock {
+  display:flex;
+  gap:32px;
+  align-items:flex-start;
+  flex-wrap:wrap;
+}
+
+.titleBlock {
+  min-width: 320px;
+  flex: 0 0 320px;
+}
+
+.title {
+  font-size: 34px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+.textBlock {
+  flex: 1 1 440px;
+}
+
+.subTitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.paragraph {
+  font-size: 16px;
+  color: var(--muted);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.actionsRow {
+  margin-top: 12px;
+}
+
+.moreBtn {
+  background: transparent;
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.moreAbout { display:flex; flex-direction:column; gap:24px; }
+
+.backRow { display:flex; justify-content:flex-start; }
+
+.grid { display:flex; flex-direction:column; gap:20px; }
+
+.section { margin-top: 12px; }
+
+.sectionTitle { font-size: 18px; font-weight:700; margin-bottom:8px; }
+
+.expItem { margin-bottom: 16px; }
+
+.expHeader { display:flex; justify-content:space-between; gap:12px; align-items:center; }
+
+.expRole { font-weight:700; font-size:16px; }
+
+.expDate { color: var(--muted); font-size:14px; }
+
+/* responsive */
+@media (max-width:900px) {
+  .titleBlock { flex-basis:100%; }
+  .textBlock { flex-basis:100%; }
+}

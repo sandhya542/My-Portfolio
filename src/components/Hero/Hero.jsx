@@ -1,38 +1,44 @@
 import React from "react";
-import "./Hero.css";
+import styles from "./Hero.module.css";
+// replace with your actual image path
+import profilePic from "../../assets/images/profilePic.svg";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 
-function Hero() {
+const Hero = () => {
   return (
-    <section className="hero" id="hero">
-      <div className="hero-content">
-        <h2>
-          Hi, I’m <span className="highlight">Sandhya</span> 👋
-        </h2>
-        <h3>Frontend Developer | UI/UX Enthusiast</h3>
-        <p>
-          I specialize in building modern, responsive, and user-friendly web
-          applications. Skilled in <strong>React.js, JavaScript, API
-          integration, and UI/UX design</strong>, I create seamless digital
-          experiences.
-        </p>
-        <p>
-          I’m continuously <strong>learning and upgrading my skills</strong> to
-          stay up to date with the latest technologies — currently expanding my
-          knowledge in <strong>Backend development</strong> as well.
-        </p>
+    <div className={styles.hero}>
+      <div className={styles.left}>
+        <div className={styles.greeting}>
+          <div>HI, I AM</div>
+          <div className={styles.name}>SANDHYA KATTA.</div>
+        </div>
 
-        <div className="hero-buttons">
-          <a href="#projects" className="btn primary">View My Work</a>
-          <a href="#contact" className="btn secondary">Contact Me</a>
+        <div className={styles.description}>
+          <div>
+            I’m a front-end developer passionate about crafting clean UI/UX,
+            integrating APIs, and building logical, scalable web applications.
+          </div>
+        </div>
+
+        <div className={styles.buttons}>
+          <a href="#contact" className={styles.contactBtn + " cta"}>CONTACT ME</a>
+
+          <div className={styles.iconRow}>
+            <a className={styles.iconBtn} href="#" aria-label="LinkedIn">
+              <FaLinkedinIn />
+            </a>
+            <a className={styles.iconBtn} href="#" aria-label="GitHub">
+              <FaGithub />
+            </a>
+          </div>
         </div>
       </div>
 
-      <div className="hero-image">
-        {/* Replace with your profile image */}
-        <img src="https://via.placeholder.com/250" alt="Sandhya Profile" />
+      <div className={styles.right}>
+        <img src={profilePic} alt="profile" />
       </div>
-    </section>
+    </div>
   );
-}
+};
 
 export default Hero;

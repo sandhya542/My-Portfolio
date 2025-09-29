@@ -1,0 +1,149 @@
+.moreAbout {
+  padding: 2rem;
+  background: #0f0f0f;
+    color: #fff;
+}
+
+/* Resume + Social Links */
+.actions {
+  display: flex;
+  /* align-items: center; */
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+.headerBlock {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  max-width: 1100px;
+  /* margin: 0 auto; */
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.textBlock {
+  max-width: 650px;
+}
+
+.textBlock h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.textBlock p {
+  color: #ccc;
+  margin-bottom: 2rem;
+  line-height: 1.7;
+}
+.buttoncontainer {
+    display: flex;
+}
+.resumeBtn {
+  background: #d7ff63;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.resumeBtn:hover {
+  background: #c5f054;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.socials a {
+  background: #111;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.socials a:hover {
+  background: #d7ff63;
+  color: #000;
+}
+
+/* Capabilities */
+.capabilities {
+  margin: 3rem 0;
+  display: flex;
+}
+
+.capabilities h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+}
+
+.capabilities p {
+  color: #ccc;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skillTags span {
+  background: #111;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  cursor: default;
+}
+.experience {
+    display: flex;
+}
+
+/* Experience */
+.experience h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.expItem {
+  margin-bottom: 2rem;
+}
+
+.expItem h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.company {
+  color: #d7ff63;
+  font-weight: 600;
+}
+
+.date {
+  display: block;
+  font-size: 0.9rem;
+  color: #999;
+  margin-bottom: 0.5rem;
+}
+
+.expItem p {
+  color: #ccc;
+  line-height: 1.6;
+}
