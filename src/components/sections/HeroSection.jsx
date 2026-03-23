@@ -17,9 +17,12 @@ const HeroSection = () => {
             {profile.title}
           </p>
           <h1 className="mt-4 max-w-4xl font-display text-4xl font-bold leading-tight text-slate-900 dark:text-slate-100 md:text-6xl">
-            Hi, I am {profile.name}. Crafting high-impact products with modern full stack engineering.
+            Hi, I am {profile.name}. Crafting high-impact products with modern
+            full stack engineering.
           </h1>
-          <p className="mt-5 max-w-2xl text-lg text-slate-600 dark:text-slate-300">{profile.tagline}</p>
+          <p className="mt-5 max-w-2xl text-lg text-slate-600 dark:text-slate-300">
+            {profile.tagline}
+          </p>
 
           <div className="mt-8 flex flex-wrap gap-3">
             <a

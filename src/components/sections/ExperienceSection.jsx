@@ -26,9 +26,13 @@ const ExperienceSection = () => {
                 <h3 className="font-display text-xl font-semibold text-slate-900 dark:text-slate-100">
                   {experience.role}
                 </h3>
-                <p className="text-sm font-semibold text-brand">{experience.period}</p>
+                <p className="text-sm font-semibold text-brand">
+                  {experience.period}
+                </p>
               </div>
-              <p className="mt-3 text-slate-600 dark:text-slate-300">{experience.summary}</p>
+              <p className="mt-3 text-slate-600 dark:text-slate-300">
+                {experience.summary}
+              </p>
               <ul className="mt-4 space-y-2 text-sm text-slate-700 dark:text-slate-200">
                 {experience.highlights.map((item) => (
                   <li key={item} className="flex gap-2">

@@ -23,7 +23,9 @@ const AboutSection = () => {
               Brief Introduction
             </h3>
             <p className="mt-3 text-slate-600 dark:text-slate-300">
-              Experienced in React.js, Node.js, Express.js, PostgreSQL, and JavaScript, with working knowledge of Python, MongoDB, and mobile app development.
+              Experienced in React.js, Node.js, Express.js, PostgreSQL, and
+              JavaScript, with working knowledge of Python, MongoDB, and mobile
+              app development.
             </p>
           </article>
 
@@ -32,7 +34,9 @@ const AboutSection = () => {
               Skills Summary
             </h3>
             <p className="mt-3 text-slate-600 dark:text-slate-300">
-              Strong in API design, responsive frontend architecture, scalable backend services, and database modeling for real-world business workflows.
+              Strong in API design, responsive frontend architecture, scalable
+              backend services, and database modeling for real-world business
+              workflows.
             </p>
           </article>
 
@@ -41,7 +45,9 @@ const AboutSection = () => {
               Career Goal
             </h3>
             <p className="mt-3 text-slate-600 dark:text-slate-300">
-              Build meaningful products that solve hard problems, while partnering with teams and clients to transform ideas into reliable digital experiences.
+              Build meaningful products that solve hard problems, while
+              partnering with teams and clients to transform ideas into reliable
+              digital experiences.
             </p>
           </article>
         </Motion.div>

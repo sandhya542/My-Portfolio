@@ -13,7 +13,9 @@ const ProjectCard = ({ project, index }) => {
       <h3 className="font-display text-xl font-semibold text-slate-900 dark:text-slate-100">
         {project.title}
       </h3>
-      <p className="mt-3 text-slate-600 dark:text-slate-300">{project.description}</p>
+      <p className="mt-3 text-slate-600 dark:text-slate-300">
+        {project.description}
+      </p>
 
       <div className="mt-5 flex flex-wrap gap-2">
         {project.tech.map((stack) => (

@@ -1,5 +1,10 @@
 import { FaDatabase, FaNodeJs, FaPython, FaReact } from "react-icons/fa";
-import { SiExpress, SiJavascript, SiMongodb, SiPostgresql } from "react-icons/si";
+import {
+  SiExpress,
+  SiJavascript,
+  SiMongodb,
+  SiPostgresql,
+} from "react-icons/si";
 import { TbCloudUpload } from "react-icons/tb";
 import { skillGroups } from "../../data/portfolioData";
 import SectionTitle from "../ui/SectionTitle";
@@ -32,12 +37,12 @@ const SkillsSection = () => {
             const IconComponent = entry[1];
 
             return (
-            <span
-              key={label}
-              className="glass inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-slate-700 dark:text-slate-100"
-            >
-              <IconComponent className="text-brand" /> {label}
-            </span>
+              <span
+                key={label}
+                className="glass inline-flex items-center gap-2 rounded-xl px-3 py-2 text-sm text-slate-700 dark:text-slate-100"
+              >
+                <IconComponent className="text-brand" /> {label}
+              </span>
             );
           })}
         </div>

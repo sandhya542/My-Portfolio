@@ -30,7 +30,8 @@ const ContactSection = () => {
               Reach Out
             </h3>
             <p className="mt-3 text-slate-600 dark:text-slate-300">
-              Feel free to connect through email or social platforms. I respond quickly to opportunities and collaboration inquiries.
+              Feel free to connect through email or social platforms. I respond
+              quickly to opportunities and collaboration inquiries.
             </p>
 
             <div className="mt-5 space-y-2 text-sm text-slate-700 dark:text-slate-200">

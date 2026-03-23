@@ -13,7 +13,7 @@ export const useTheme = () => {
         ? "dark"
         : "light";
     },
-    []
+    [],
   );
 
   const [theme, setTheme] = useState(getInitialTheme);

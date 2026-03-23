@@ -12,24 +12,27 @@ const Navbar = ({ theme, onToggleTheme }) => {
     >
       <nav className="mx-auto w-full max-w-6xl px-4 py-3 md:px-6">
         <div className="flex items-center justify-between">
-        <a href="#home" className="font-display text-lg font-bold text-gradient">
-          {profile.name}
-        </a>
+          <a
+            href="#home"
+            className="font-display text-lg font-bold text-gradient"
+          >
+            {profile.name}
+          </a>
 
-        <ul className="hidden items-center gap-6 md:flex">
-          {navItems.map((item) => (
-            <li key={item.id}>
-              <a
-                href={`#${item.id}`}
-                className="text-sm font-medium text-slate-700 transition-colors hover:text-brand dark:text-slate-200"
-              >
-                {item.label}
-              </a>
-            </li>
-          ))}
-        </ul>
+          <ul className="hidden items-center gap-6 md:flex">
+            {navItems.map((item) => (
+              <li key={item.id}>
+                <a
+                  href={`#${item.id}`}
+                  className="text-sm font-medium text-slate-700 transition-colors hover:text-brand dark:text-slate-200"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        <ThemeToggle theme={theme} onToggle={onToggleTheme} />
+          <ThemeToggle theme={theme} onToggle={onToggleTheme} />
         </div>
 
         <ul className="mt-3 flex gap-4 overflow-x-auto pb-1 text-sm md:hidden">

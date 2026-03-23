@@ -16,7 +16,9 @@ const SkillGroupCard = ({ group, index }) => {
         {group.items.map((item) => (
           <div key={item.name}>
             <div className="mb-2 flex items-center justify-between">
-              <p className="text-sm font-medium text-slate-700 dark:text-slate-200">{item.name}</p>
+              <p className="text-sm font-medium text-slate-700 dark:text-slate-200">
+                {item.name}
+              </p>
               <p className="text-xs font-semibold text-brand">{item.level}%</p>
             </div>
             <div className="h-2 overflow-hidden rounded-full bg-slate-300/70 dark:bg-slate-700/70">

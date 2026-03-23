@@ -16,7 +16,9 @@ const SectionTitle = ({ eyebrow, title, subtitle }) => {
         {title}
       </h2>
       {subtitle && (
-        <p className="mt-4 max-w-2xl text-slate-600 dark:text-slate-300">{subtitle}</p>
+        <p className="mt-4 max-w-2xl text-slate-600 dark:text-slate-300">
+          {subtitle}
+        </p>
       )}
     </Motion.div>
   );
