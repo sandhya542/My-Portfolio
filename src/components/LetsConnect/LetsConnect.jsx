@@ -22,7 +22,7 @@ const LetsConnect = () => {
         "YOUR_SERVICE_ID", // e.g., 'service_xxx'
         "YOUR_TEMPLATE_ID", // e.g., 'template_yyy'
         formData,
-        "YOUR_PUBLIC_KEY" // e.g., 'user_zzz'
+        "YOUR_PUBLIC_KEY", // e.g., 'user_zzz'
       )
       .then(
         (response) => {
@@ -33,7 +33,7 @@ const LetsConnect = () => {
         (error) => {
           console.log("FAILED...", error);
           setStatus("Failed to send message. Try again.");
-        }
+        },
       );
   };
 
@@ -46,10 +46,18 @@ const LetsConnect = () => {
       </div>
 
       <div className={styles.links}>
-        <a href="https://www.linkedin.com/in/sandhya-rani-katta/" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/sandhya-rani-katta/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           LinkedIn ↗
         </a>
-        <a href="https://github.com/sandhya542" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/sandhya542"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           GitHub ⌘
         </a>
         <a href="/Sandhya_Katta_Resume.pdf" download>
@@ -58,9 +66,29 @@ const LetsConnect = () => {
       </div>
 
       <form onSubmit={handleSubmit} className={styles.form}>
-        <input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
-        <input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
-        <textarea name="message" placeholder="Your Message" value={formData.message} onChange={handleChange} required />
+        <input
+          type="text"
+          name="name"
+          placeholder="Your Name"
+          value={formData.name}
+          onChange={handleChange}
+          required
+        />
+        <input
+          type="email"
+          name="email"
+          placeholder="Your Email"
+          value={formData.email}
+          onChange={handleChange}
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          value={formData.message}
+          onChange={handleChange}
+          required
+        />
         <button type="submit">Send Message</button>
       </form>
 
